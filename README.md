@@ -48,22 +48,24 @@ The project includes:
 
 ## 📊 **Dashboard Visuals**
 
+### **KPI Snapshot**
+![KPI Snapshot](screenshots/dashboard_kpis.png)
+
 ### **ROI by Platform**
-`/screenshots/ROI_by_Platform.png`
-📸 **KPI Snapshot**  
-![KPI Snapshot](screenshots/KPI_Snapshot.png)
+![ROI by Platform](screenshots/ROI_by_Platform.png)
 
 ### **Spend vs Revenue by Platform**
-`/screenshots/Spend_vs_Revenue.png`
+![Spend vs Revenue](screenshots/Spend_vs_Revenue_by_Platform.png)
 
 ### **Average CPC by Platform**
-`/screenshots/Average_CPC.png`
+![Average CPC](screenshots/Average_CPC_by_Platform.png)
 
 ### **Engagement Rate by Platform**
-`/screenshots/Engagement_Rate.png`
+![Engagement Rate](screenshots/Engagement_Rate_by_Platform.png)
 
 ### **Total Conversions by Region**
-`/screenshots/Total_Conversions_by_Region.png`
+![Total Conversions by Region](screenshots/Total_Conversions_by_Region.png)
+
 
 ---
 
