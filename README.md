@@ -103,7 +103,7 @@ The project includes:
 
 A professionally formatted 1-page summary is included:
 
-`Marketing_Campaign_Summary.pdf`
+`[Marketing_Campaign_Summary.pdf](Marketing_Campaign_Summary.pdf)`
 
 ---
 
