@@ -41,9 +41,6 @@ The project includes:
 - **ROI (%)**  
 - **Average CPC**  
 
-📸 *KPI Screenshot:*  
-`/screenshots/KPI_Snapshot.png`
-
 ---
 
 ## 📊 **Dashboard Visuals**
