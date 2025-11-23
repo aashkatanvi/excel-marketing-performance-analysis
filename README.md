@@ -50,6 +50,8 @@ The project includes:
 
 ### **ROI by Platform**
 `/screenshots/ROI_by_Platform.png`
+📸 **KPI Snapshot**  
+![KPI Snapshot](screenshots/KPI_Snapshot.png)
 
 ### **Spend vs Revenue by Platform**
 `/screenshots/Spend_vs_Revenue.png`
