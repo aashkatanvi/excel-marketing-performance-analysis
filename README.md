@@ -103,12 +103,12 @@ The project includes:
 
 A professionally formatted 1-page summary is included:
 
-`Marketing_Campaign_Summary_StyleA.pdf`
+`Marketing_Campaign_Summary.pdf`
 
 ---
 
 ## 🔗 **Project Files (OneDrive Link)**  
-👉 *(Paste your OneDrive view-only link here)*
+👉 *https://1drv.ms/f/c/1f625f87ab73d63a/IgCwoYZbABWFRI1QMuY1NAS3AZbdFbNPDZvEh909pxH4Mn8?e=81SuW6*
 
 ---
 
