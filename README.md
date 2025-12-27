@@ -20,7 +20,11 @@ The project includes:
 ---
 
 ## 📁 **Repository Structure**
+• Excel workbook (Raw → Cleaned → Analysis → Dashboard)
 
+• Insights & Summary
+
+• Screenshots folder
 ---
 
 ## 🧹 **Data Cleaning Workflow**
