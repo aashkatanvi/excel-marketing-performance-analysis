@@ -19,7 +19,7 @@ The project includes:
 
 ---
 
-## 📁 **Repository Structure**
+##  **Repository Structure**
 • Excel workbook (Raw → Cleaned → Analysis → Dashboard)
 
 • Insights & Summary
@@ -28,7 +28,7 @@ The project includes:
 
 ---
 
-## 🧹 **Data Cleaning Workflow**
+##  **Data Cleaning Workflow**
 
 - Removed duplicates and unnecessary spaces  
 - Standardized naming conventions (platforms, regions)  
@@ -38,7 +38,7 @@ The project includes:
 
 ---
 
-## 📈 **Key Metrics (KPIs)**
+##  **Key Metrics (KPIs)**
 
 - **Total Spend**  
 - **Total Revenue**  
@@ -48,7 +48,7 @@ The project includes:
 
 ---
 
-## 📊 **Dashboard Visuals**
+##  **Dashboard Visuals**
 
 ### **KPI Snapshot**
 ![KPI Snapshot](screenshots/dashboard_kpis.png)
@@ -71,30 +71,30 @@ The project includes:
 
 ---
 
-## 🔍 **Key Insights**
+##  **Key Insights**
 
-### ⭐ **Google delivers the strongest ROI (785%)**
+###  **Google delivers the strongest ROI (785%)**
 - Lowest CPC (₹6.68)  
 - Best overall conversion performance  
 
-### ⭐ **Meta leads engagement (0.65%)**
+###  **Meta leads engagement (0.65%)**
 - Strong awareness + audience interaction  
 
-### ⭐ **LinkedIn is the most expensive platform (CPC ₹22.60)**
+###  **LinkedIn is the most expensive platform (CPC ₹22.60)**
 - Low ROI  
 - Best used for B2B or niche audiences  
 
-### ⭐ **YouTube has weakest ROI (20%)**
+###  **YouTube has weakest ROI (20%)**
 - Higher CPC  
 - Low revenue return  
 
-### ⭐ **High-performing regions: South & East**
+###  **High-performing regions: South & East**
 - Highest conversion volume  
 - Strongest response to campaigns  
 
 ---
 
-## 🧭 **Recommendations**
+##  **Recommendations**
 
 - Increase budget allocation for **Google** (best ROI).  
 - Use **Meta** for engagement and brand awareness.  
@@ -104,7 +104,7 @@ The project includes:
 
 ---
 
-## 📄 **Project Summary PDF**
+##  **Project Summary PDF**
 
 A professionally formatted 1-page summary is included:
 
@@ -112,12 +112,12 @@ A professionally formatted 1-page summary is included:
 
 ---
 
-## 🔗 **Project Files (OneDrive Link)**  
-👉 *https://1drv.ms/f/c/1f625f87ab73d63a/IgCwoYZbABWFRI1QMuY1NAS3AZbdFbNPDZvEh909pxH4Mn8?e=81SuW6*
+##  **Project Files (OneDrive Link)**  
+ *https://1drv.ms/f/c/1f625f87ab73d63a/IgCwoYZbABWFRI1QMuY1NAS3AZbdFbNPDZvEh909pxH4Mn8?e=81SuW6*
 
 ---
 
-## 🧠 **Tools Used**
+##  **Tools Used**
 
 - Microsoft Excel  
 - Data Cleaning  
