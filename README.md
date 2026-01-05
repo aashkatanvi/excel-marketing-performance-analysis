@@ -1,10 +1,10 @@
-📊 Marketing Campaign Performance Analysis (Excel Project)
+## Marketing Campaign Performance Analysis (Excel Project)
 
 ### **An end-to-end Excel analytics project analyzing marketing performance across Google, Meta, YouTube, and LinkedIn using KPIs, dashboards, and insights.**
 
 ---
 
-## 🚀 **Project Overview**
+##  **Project Overview**
 
 This project explores a real-world style marketing dataset (305 rows, 13 columns) to evaluate the performance of four advertising platforms and five regions. The goal is to understand ROI, CPC behavior, engagement patterns, and regional conversion performance — and provide actionable recommendations.
 
