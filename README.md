@@ -14,8 +14,7 @@ The project includes:
 - KPI summary (Spend, Revenue, ROI, Conversions, Avg CPC)  
 - Dashboard visuals  
 - Platform-level insights  
-- Regional performance breakdown  
-- Professionally written 1-page summary PDF  
+- Regional performance breakdown
 
 ---
 
