@@ -1,6 +1,6 @@
-## Marketing Campaign Performance Analysis (Excel Project)
+## Marketing Campaign Performance Analysis
 
-### **An end-to-end Excel analytics project analyzing marketing performance across Google, Meta, YouTube, and LinkedIn using KPIs, dashboards, and insights.**
+### **An end-to-end analytics project analyzing marketing performance across Google, Meta, YouTube, and LinkedIn using KPIs, dashboards, and insights.**
 
 ---
 
