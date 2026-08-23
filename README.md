@@ -1,16 +1,14 @@
 # Marketing Performance Analytics — End-to-End Case Study
 
-> **From raw campaign data to business decisions:** data preparation, KPI engineering, analytical modeling, Power BI dashboarding, and performance recommendations.
-
----
+> **From raw campaign data to budget decisions:** data preparation, KPI engineering, analytical modeling, Power BI dashboarding, and business recommendations.
 
 ## Business Question
 
 **Which marketing channels generate the strongest returns, and where is efficiency leaking?**
 
-This project analyzes campaign-level marketing data across **Google, Meta, LinkedIn, and YouTube** to evaluate spend efficiency, revenue generation, conversion performance, and cost economics across regions, objectives, devices, and ad types.
+This project evaluates campaign performance across **Google, Meta, LinkedIn, and YouTube**, with a focus on spend efficiency, revenue generation, conversions, and unit economics across regions, objectives, devices, and ad types.
 
-The objective is not simply to build a dashboard, but to turn campaign data into **decision-ready performance insights**.
+The goal is not to produce a dashboard for its own sake. The goal is to turn campaign data into **decision-ready marketing intelligence**.
 
 ---
 
@@ -21,29 +19,29 @@ Raw Campaign Data
        ↓
 Data Cleaning & Validation
        ↓
-Metric / KPI Engineering
+KPI Engineering
        ↓
-Exploratory & Comparative Analysis
+Comparative / Exploratory Analysis
        ↓
-Power BI Data Model & Measures
+Power BI Data Model & DAX Measures
        ↓
 Interactive Dashboard
        ↓
 Business Insights & Recommendations
 ```
 
-### 1. Data Preparation
+### 1. Data preparation
 
-The campaign dataset was inspected and cleaned before analysis, including:
+The campaign data was structured into a consistent analytical table by:
 
-- Standardizing categorical fields such as platform, region, objective, device, and ad type
-- Validating numeric fields and handling inconsistent values
+- Standardizing platform, region, objective, device, and ad-type categories
+- Validating numeric fields and handling inconsistent records
 - Removing structural noise and unusable rows
-- Preparing a consistent analytical table for downstream reporting
+- Preparing a clean dataset for BI analysis
 
-### 2. KPI Engineering
+### 2. KPI engineering
 
-The analysis focuses on business-relevant performance metrics including:
+Decision-relevant metrics include:
 
 - **Total Spend**
 - **Total Revenue**
@@ -54,11 +52,11 @@ The analysis focuses on business-relevant performance metrics including:
 - **CPC**
 - **Cost per Conversion**
 
-### 3. Power BI Analysis
+### 3. Power BI modeling & analysis
 
-The cleaned campaign data was modeled in **Power BI** and transformed into an interactive performance dashboard with measures for platform-level efficiency and conversion economics.
+The cleaned campaign table was modeled in **Power BI**, with DAX measures used to calculate the core performance metrics and compare channel economics.
 
-The dashboard supports filtering by:
+The dashboard supports interactive analysis by:
 
 - Platform
 - Region
@@ -70,16 +68,21 @@ The dashboard supports filtering by:
 
 ## Dashboard
 
-### Marketing Performance Dashboard
+### Marketing Performance — Channel Efficiency View
 
-The final dashboard answers four core questions:
+The final Power BI dashboard is designed around four decision questions:
 
 1. **Where is marketing spend producing the strongest financial return?**
-2. **Which platforms have an efficiency gap?**
-3. **How do conversion rates differ across channels?**
-4. **What does the platform-level performance matrix imply for budget allocation?**
+2. **Which channels show an efficiency gap?**
+3. **How do conversion rates differ across platforms?**
+4. **Where should budget be protected, optimized, or challenged?**
 
-> The current portfolio-facing dashboard is built in **Power BI**. The repository's earlier Excel dashboard has been superseded by this analytical version.
+The primary deliverable is the **Power BI analytical layer**, not the earlier spreadsheet dashboard.
+
+![Marketing Performance Dashboard](marketing_performance.png)
+
+> **Power BI file:** `Marketing_Performance_Analytics.pbix`  
+> Open it in Power BI Desktop to explore the interactive model, measures, filters, and dashboard.
 
 ---
 
@@ -108,7 +111,7 @@ Meta remains economically viable, but its return profile is materially weaker th
 - LinkedIn: **38% ROI**, **₹769.49 cost per conversion**
 - YouTube: **16% ROI**, **₹795.29 cost per conversion**
 
-These channels require tighter targeting, experimentation, or budget scrutiny rather than simply receiving additional spend.
+These channels warrant tighter targeting, experimentation, and budget scrutiny rather than automatic budget expansion.
 
 ### Overall economics
 
@@ -123,7 +126,7 @@ These channels require tighter targeting, experimentation, or budget scrutiny ra
 
 ## Business Recommendations
 
-### 1. Protect and scale high-efficiency spend
+### 1. Protect and selectively scale high-efficiency spend
 
 Prioritize Google for incremental performance budget while monitoring whether marginal returns remain sustainable as spend increases.
 
@@ -131,13 +134,13 @@ Prioritize Google for incremental performance budget while monitoring whether ma
 
 Maintain Meta as a secondary acquisition channel and optimize targeting, creative, and objective mix before increasing spend aggressively.
 
-### 3. Review LinkedIn and YouTube allocation
+### 3. Challenge LinkedIn and YouTube economics
 
 Investigate the high cost per conversion and low ROI before allocating additional budget. Test narrower audiences, creative formats, and campaign objectives.
 
-### 4. Use the dashboard for budget decisions, not just reporting
+### 4. Use the dashboard as a decision tool
 
-The Power BI dashboard is designed to support interactive channel comparisons and identify where marketing efficiency is improving or deteriorating.
+The dashboard is built to compare channels interactively and surface where marketing efficiency is improving or deteriorating—not simply to report historical totals.
 
 ---
 
@@ -145,36 +148,37 @@ The Power BI dashboard is designed to support interactive channel comparisons an
 
 ```text
 ├── README.md
+├── Marketing_Performance_Analytics.pbix
+├── marketing_performance.png
 ├── raw_marketing_data.xlsx
-├── cleaned_marketing_data.xlsx
-├── Excel_Marketing_Analysis_Final.xlsx
-└── screenshots/
+└── cleaned_marketing_data.xlsx
 ```
 
-The Excel files are retained as **source/data-preparation artifacts**, not as the primary deliverable. The analytical output has moved to the Power BI layer.
+The Excel files are retained as **source/data-preparation artifacts**. They are not the primary analytical deliverable. The portfolio-facing analysis and interactive reporting layer are built in Power BI.
 
 ---
 
 ## Tools & Skills Demonstrated
 
-**Analytics:**
+**Analytics**
 - Data Cleaning & Validation
-- Exploratory Data Analysis
+- Exploratory / Comparative Analysis
 - KPI Design
 - Marketing Performance Analysis
 - Channel Efficiency Analysis
 - Business Recommendation
 
-**BI / Visualization:**
+**BI & Data Modeling**
 - Power BI
 - Power Query
 - DAX Measures
+- Data Modeling
 - Interactive Slicers
 - KPI Cards
 - Performance Matrix
 - Comparative Visualizations
 
-**Business Concepts:**
+**Business Concepts**
 - ROI & ROAS
 - Conversion Rate
 - CPC & Cost per Conversion
@@ -186,9 +190,9 @@ The Excel files are retained as **source/data-preparation artifacts**, not as th
 
 ## Project Outcome
 
-This project demonstrates an end-to-end analytical workflow: **starting with imperfect campaign data, structuring it for analysis, engineering decision-relevant KPIs, building an interactive Power BI reporting layer, and translating the results into concrete marketing actions.**
+This case study demonstrates an end-to-end analytical workflow: **starting with imperfect campaign data, structuring it for analysis, engineering decision-relevant KPIs, building an interactive Power BI reporting layer, and translating the results into concrete marketing actions.**
 
-The emphasis is on **analytical reasoning and business impact**, not on dashboard decoration alone.
+The emphasis is on **analytical reasoning, performance economics, and business impact**—not on Excel formatting or dashboard decoration alone.
 
 ---
 
