@@ -1,201 +1,150 @@
-# Marketing Performance Analytics — End-to-End Case Study
+# Marketing Performance Analysis
 
-> **From raw campaign data to budget decisions:** data preparation, KPI engineering, analytical modeling, Power BI dashboarding, and business recommendations.
+An end-to-end marketing analytics project evaluating 300+ digital marketing campaigns across Google, Meta, LinkedIn, and YouTube to identify high-performing channels, regional conversion patterns, and areas of efficiency leakage.
 
-## Business Question
+The project combines data preparation, KPI development, analytical modeling, and interactive dashboarding to translate campaign-level data into actionable marketing insights.
 
-**Which marketing channels generate the strongest returns, and where is efficiency leaking?**
+## Business Problem
 
-This project evaluates campaign performance across **Google, Meta, LinkedIn, and YouTube**, with a focus on spend efficiency, revenue generation, conversions, and unit economics across regions, objectives, devices, and ad types.
+Marketing teams need to understand which channels are generating efficient returns and where campaign spend is underperforming.
 
-The goal is not to produce a dashboard for its own sake. The goal is to turn campaign data into **decision-ready marketing intelligence**.
+This analysis focuses on:
 
----
+- Which platforms generate the strongest financial returns?
+- Where is marketing spend becoming inefficient?
+- Which regions have stronger conversion performance?
+- How do platforms compare across ROI, ROAS, CPC, conversion rate, and cost per conversion?
+- Where could budget allocation be improved?
 
-## Analytical Workflow
+## Tools & Technologies
 
-```text
-Raw Campaign Data
-       ↓
-Data Cleaning & Validation
-       ↓
-KPI Engineering
-       ↓
-Comparative / Exploratory Analysis
-       ↓
-Power BI Data Model & DAX Measures
-       ↓
-Interactive Dashboard
-       ↓
-Business Insights & Recommendations
-```
+- **Power BI** — Data modeling, DAX measures, interactive dashboarding
+- **Power Query** — Data cleaning and transformation
+- **Excel** — Source data preparation and initial analysis
+- **DAX** — KPI and performance metric calculations
+- **GitHub** — Project documentation and version control
 
-### 1. Data preparation
+## Analytical Approach
 
-The campaign data was structured into a consistent analytical table by:
+### 1. Data Preparation
+Cleaned and transformed campaign-level marketing data to create an analysis-ready dataset.
 
-- Standardizing platform, region, objective, device, and ad-type categories
-- Validating numeric fields and handling inconsistent records
-- Removing structural noise and unusable rows
-- Preparing a clean dataset for BI analysis
-
-### 2. KPI engineering
-
-Decision-relevant metrics include:
-
-- **Total Spend**
-- **Total Revenue**
-- **ROI %**
-- **ROAS**
-- **Total Conversions**
-- **Conversion Rate**
-- **CPC**
-- **Cost per Conversion**
-
-### 3. Power BI modeling & analysis
-
-The cleaned campaign table was modeled in **Power BI**, with DAX measures used to calculate the core performance metrics and compare channel economics.
-
-The dashboard supports interactive analysis by:
+Key fields included:
 
 - Platform
-- Region
 - Objective
-- Ad Type
+- Region
 - Device
+- Ad Type
+- Impressions
+- Clicks
+- Conversions
+- Spend
+- Revenue
+- Engagement metrics
 
----
+### 2. KPI Development
 
-## Dashboard
+Developed business-focused measures including:
 
-### Marketing Performance — Channel Efficiency View
+- Total Revenue
+- Total Spend
+- ROI %
+- ROAS
+- Total Conversions
+- Conversion Rate
+- CPC
+- Cost per Conversion
 
-The final Power BI dashboard is designed around four decision questions:
+### 3. Performance Analysis
 
-1. **Where is marketing spend producing the strongest financial return?**
-2. **Which channels show an efficiency gap?**
-3. **How do conversion rates differ across platforms?**
-4. **Where should budget be protected, optimized, or challenged?**
+Compared marketing performance across:
 
-The primary deliverable is the **Power BI analytical layer**, not the earlier spreadsheet dashboard.
+- Digital platforms
+- Geographic regions
+- Conversion efficiency
+- Campaign investment
+- Revenue generation
+- Customer acquisition efficiency
 
-![Marketing Performance Dashboard](marketing_performance.png)
+### 4. Dashboard Development
 
-> **Power BI file:** `Marketing_Performance_Analytics.pbix`  
-> Open it in Power BI Desktop to explore the interactive model, measures, filters, and dashboard.
+Built an interactive Power BI dashboard with:
 
----
+- Executive KPI overview
+- Spend vs Revenue analysis
+- Conversion Rate by Region
+- Conversion Rate by Platform
+- Platform performance matrix
+- Interactive filters for Objective, Region, Ad Type, Platform, and Device
 
 ## Key Findings
 
-### Google is the clear efficiency leader
+### Platform Performance
+
+**Google was the strongest-performing platform**, generating:
 
 - **812% ROI**
 - **9.12 ROAS**
-- **2,946 conversions**
+- **3.42% conversion rate**
 - **₹117.19 cost per conversion**
 
-Google generates substantially stronger returns than the other platforms while also maintaining the lowest CPC in the final analytical view.
+Google generated substantially stronger returns than the other platforms while maintaining the lowest cost per conversion.
 
-### Meta is the secondary performance channel
+### Efficiency Leakage
 
-- **200% ROI**
-- **3.00 ROAS**
-- **961 conversions**
-- **₹331.18 cost per conversion**
+**YouTube and LinkedIn showed the weakest financial efficiency.**
 
-Meta remains economically viable, but its return profile is materially weaker than Google.
+YouTube recorded:
 
-### LinkedIn and YouTube show major efficiency pressure
+- **16% ROI**
+- **1.16 ROAS**
+- **₹795.29 cost per conversion**
 
-- LinkedIn: **38% ROI**, **₹769.49 cost per conversion**
-- YouTube: **16% ROI**, **₹795.29 cost per conversion**
+LinkedIn recorded:
 
-These channels warrant tighter targeting, experimentation, and budget scrutiny rather than automatic budget expansion.
+- **38% ROI**
+- **1.38 ROAS**
+- **₹769.49 cost per conversion**
 
-### Overall economics
+Both platforms therefore require closer scrutiny of campaign targeting, spend allocation, and conversion efficiency.
 
-- **Total Revenue:** ₹5.28M
-- **Total Spend:** ₹1.57M
-- **Overall ROI:** 235%
-- **Overall ROAS:** 3.35
-- **Total Conversions:** 5,074
-- **Overall Cost per Conversion:** ₹310.20
+### Regional Performance
 
----
+Conversion performance varied across regions.
+
+**Central recorded the highest conversion rate at 3.09%**, followed by South and East at **2.62%**.
+
+The regional comparison provides an additional dimension for evaluating where marketing investment is converting more efficiently.
 
 ## Business Recommendations
 
-### 1. Protect and selectively scale high-efficiency spend
+Based on the analysis:
 
-Prioritize Google for incremental performance budget while monitoring whether marginal returns remain sustainable as spend increases.
+1. **Prioritize high-return channels such as Google** where the data supports stronger ROI and lower acquisition costs.
+2. **Review LinkedIn and YouTube spending**, particularly campaigns producing low returns relative to acquisition cost.
+3. **Investigate regional differences in conversion performance** before reallocating budget geographically.
+4. Use **conversion efficiency alongside ROI** when evaluating campaigns to avoid optimizing solely for revenue.
+5. Continuously monitor **cost per conversion, conversion rate, and ROAS** when making budget allocation decisions.
 
-### 2. Keep Meta as a complementary performance channel
+## Dashboard
 
-Maintain Meta as a secondary acquisition channel and optimize targeting, creative, and objective mix before increasing spend aggressively.
+![Marketing Performance Dashboard](images/marketing-performance-dashboard.png)
 
-### 3. Challenge LinkedIn and YouTube economics
+The Power BI dashboard provides an interactive view of platform and regional performance, allowing users to filter results by objective, region, ad type, platform, and device.
 
-Investigate the high cost per conversion and low ROI before allocating additional budget. Test narrower audiences, creative formats, and campaign objectives.
-
-### 4. Use the dashboard as a decision tool
-
-The dashboard is built to compare channels interactively and surface where marketing efficiency is improving or deteriorating—not simply to report historical totals.
-
----
-
-## Repository Structure
+## Project Structure
 
 ```text
-├── README.md
-├── Marketing_Performance_Analytics.pbix
-├── marketing_performance.png
-├── raw_marketing_data.xlsx
-└── cleaned_marketing_data.xlsx
-```
-
-The Excel files are retained as **source/data-preparation artifacts**. They are not the primary analytical deliverable. The portfolio-facing analysis and interactive reporting layer are built in Power BI.
-
----
-
-## Tools & Skills Demonstrated
-
-**Analytics**
-- Data Cleaning & Validation
-- Exploratory / Comparative Analysis
-- KPI Design
-- Marketing Performance Analysis
-- Channel Efficiency Analysis
-- Business Recommendation
-
-**BI & Data Modeling**
-- Power BI
-- Power Query
-- DAX Measures
-- Data Modeling
-- Interactive Slicers
-- KPI Cards
-- Performance Matrix
-- Comparative Visualizations
-
-**Business Concepts**
-- ROI & ROAS
-- Conversion Rate
-- CPC & Cost per Conversion
-- Budget Allocation
-- Channel Performance
-- Marketing Efficiency
-
----
-
-## Project Outcome
-
-This case study demonstrates an end-to-end analytical workflow: **starting with imperfect campaign data, structuring it for analysis, engineering decision-relevant KPIs, building an interactive Power BI reporting layer, and translating the results into concrete marketing actions.**
-
-The emphasis is on **analytical reasoning, performance economics, and business impact**—not on Excel formatting or dashboard decoration alone.
-
----
-
-### Aashka Tanvi
-
-**Data Analytics | Marketing Analytics | Business Intelligence**
+marketing-performance-analysis/
+│
+├── data/
+│   └── marketing_data.csv
+│
+├── dashboard/
+│   └── marketing-performance.pbix
+│
+├── images/
+│   └── marketing-performance-dashboard.png
+│
+└── README.md
