@@ -142,7 +142,7 @@ Based on the analysis:
 
 ## Dashboard
 
-![Marketing Performance Dashboard](images/marketing-performance-dashboard.png)
+![Marketing Performance Dashboard](images/marketing_performance.png)
 
 The Power BI dashboard provides an interactive view of platform and regional performance, with filters for objective, region, ad type, platform, and device.
 
