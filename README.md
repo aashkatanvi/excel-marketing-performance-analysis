@@ -1,51 +1,57 @@
-# Marketing Performance Analysis
+# Marketing Performance Analytics
 
 An end-to-end marketing analytics project evaluating 300+ digital marketing campaigns across Google, Meta, LinkedIn, and YouTube to identify high-performing channels, regional conversion patterns, and areas of efficiency leakage.
 
-The project combines data preparation, KPI development, analytical modeling, and interactive dashboarding to translate campaign-level data into actionable marketing insights.
+The project covers data preparation, KPI development, analytical modeling, DAX-based metric calculation, and interactive Power BI dashboarding to translate campaign-level data into actionable marketing insights.
 
 ## Business Problem
 
-Marketing teams need to understand which channels are generating efficient returns and where campaign spend is underperforming.
+Marketing teams need to understand which channels are generating efficient returns, where acquisition efficiency is weakening, and whether performance varies across regions.
 
-This analysis focuses on:
+This analysis addresses:
 
 - Which platforms generate the strongest financial returns?
 - Where is marketing spend becoming inefficient?
-- Which regions have stronger conversion performance?
-- How do platforms compare across ROI, ROAS, CPC, conversion rate, and cost per conversion?
-- Where could budget allocation be improved?
+- Which regions demonstrate stronger conversion performance?
+- How do platforms compare across ROI, ROAS, conversion rate, CPC, and cost per conversion?
+- Where could marketing budget allocation be improved?
 
 ## Tools & Technologies
 
-- **Power BI** — Data modeling, DAX measures, interactive dashboarding
-- **Power Query** — Data cleaning and transformation
-- **Excel** — Source data preparation and initial analysis
-- **DAX** — KPI and performance metric calculations
+- **Power BI** — Data modeling, interactive dashboarding, KPI reporting
+- **Power Query** — Data cleaning, transformation, and preparation
+- **DAX** — Business metrics and analytical measures
+- **Excel** — Source data handling and supporting analysis
 - **GitHub** — Project documentation and version control
 
 ## Analytical Approach
 
 ### 1. Data Preparation
-Cleaned and transformed campaign-level marketing data to create an analysis-ready dataset.
 
-Key fields included:
+Prepared campaign-level marketing data for analysis by cleaning and transforming fields related to campaign performance, investment, engagement, and conversion.
+
+Key dimensions included:
 
 - Platform
 - Objective
 - Region
 - Device
 - Ad Type
+
+Key performance measures included:
+
 - Impressions
 - Clicks
 - Conversions
 - Spend
 - Revenue
-- Engagement metrics
+- Likes
+- Comments
+- Shares
 
-### 2. KPI Development
+### 2. KPI & Metric Development
 
-Developed business-focused measures including:
+Developed business-focused measures using DAX to evaluate both financial return and acquisition efficiency:
 
 - Total Revenue
 - Total Spend
@@ -58,85 +64,92 @@ Developed business-focused measures including:
 
 ### 3. Performance Analysis
 
-Compared marketing performance across:
+Analyzed campaign performance across:
 
 - Digital platforms
 - Geographic regions
-- Conversion efficiency
-- Campaign investment
 - Revenue generation
+- Marketing investment
+- Conversion efficiency
 - Customer acquisition efficiency
 
-### 4. Dashboard Development
+The analysis compares platforms using both return-based metrics such as ROI and ROAS and efficiency-based metrics such as conversion rate, CPC, and cost per conversion.
 
-Built an interactive Power BI dashboard with:
+### 4. Interactive Dashboard
+
+Built an interactive Power BI dashboard featuring:
 
 - Executive KPI overview
-- Spend vs Revenue analysis
+- Spend vs Revenue by Platform
 - Conversion Rate by Region
 - Conversion Rate by Platform
-- Platform performance matrix
-- Interactive filters for Objective, Region, Ad Type, Platform, and Device
+- Platform Performance Matrix
+- Interactive slicers for Objective, Region, Ad Type, Platform, and Device
+
+The dashboard enables users to move from high-level marketing performance to platform- and region-level efficiency analysis.
 
 ## Key Findings
 
-### Platform Performance
+### 1. Google Is the Strongest-Performing Platform
 
-**Google was the strongest-performing platform**, generating:
+Google significantly outperformed the other platforms across financial and acquisition-efficiency metrics:
 
 - **812% ROI**
 - **9.12 ROAS**
-- **3.42% conversion rate**
-- **₹117.19 cost per conversion**
+- **3.42% Conversion Rate**
+- **₹117.19 Cost per Conversion**
 
-Google generated substantially stronger returns than the other platforms while maintaining the lowest cost per conversion.
+Google generated the strongest return while also maintaining the lowest cost per conversion among the four platforms.
 
-### Efficiency Leakage
+### 2. YouTube and LinkedIn Show Significant Efficiency Gaps
 
-**YouTube and LinkedIn showed the weakest financial efficiency.**
+YouTube and LinkedIn were the weakest platforms on financial efficiency:
 
-YouTube recorded:
-
+**YouTube**
 - **16% ROI**
 - **1.16 ROAS**
-- **₹795.29 cost per conversion**
+- **₹795.29 Cost per Conversion**
 
-LinkedIn recorded:
-
+**LinkedIn**
 - **38% ROI**
 - **1.38 ROAS**
-- **₹769.49 cost per conversion**
+- **₹769.49 Cost per Conversion**
 
-Both platforms therefore require closer scrutiny of campaign targeting, spend allocation, and conversion efficiency.
+Their relatively low returns and high acquisition costs indicate areas where campaign targeting, spend allocation, and conversion efficiency should be reviewed.
 
-### Regional Performance
+### 3. Regional Conversion Performance Varies
 
-Conversion performance varied across regions.
+Conversion performance differed across regions:
 
-**Central recorded the highest conversion rate at 3.09%**, followed by South and East at **2.62%**.
+- **Central — 3.09%**
+- **South — 2.62%**
+- **East — 2.62%**
+- **North — 2.49%**
+- **West — 2.40%**
+- **Unknown — 1.98%**
 
-The regional comparison provides an additional dimension for evaluating where marketing investment is converting more efficiently.
+Central recorded the highest conversion rate, while the Unknown region showed the weakest conversion performance.
 
 ## Business Recommendations
 
 Based on the analysis:
 
-1. **Prioritize high-return channels such as Google** where the data supports stronger ROI and lower acquisition costs.
-2. **Review LinkedIn and YouTube spending**, particularly campaigns producing low returns relative to acquisition cost.
-3. **Investigate regional differences in conversion performance** before reallocating budget geographically.
-4. Use **conversion efficiency alongside ROI** when evaluating campaigns to avoid optimizing solely for revenue.
-5. Continuously monitor **cost per conversion, conversion rate, and ROAS** when making budget allocation decisions.
+1. **Prioritize high-return channels such as Google** where stronger ROI and lower acquisition costs are supported by the data.
+2. **Review LinkedIn and YouTube spending** to identify campaigns with weak returns and high acquisition costs.
+3. **Investigate regional conversion differences** before making geographic budget allocation decisions.
+4. Evaluate campaigns using **multiple efficiency metrics**, rather than optimizing solely for revenue or ROI.
+5. Continuously monitor **ROAS, conversion rate, CPC, and cost per conversion** when reallocating marketing spend.
 
 ## Dashboard
 
 ![Marketing Performance Dashboard](images/marketing-performance-dashboard.png)
 
-The Power BI dashboard provides an interactive view of platform and regional performance, allowing users to filter results by objective, region, ad type, platform, and device.
+The Power BI dashboard provides an interactive view of platform and regional performance, with filters for objective, region, ad type, platform, and device.
 
 ## Project Structure
 
 ```text
-marketing-performance-analysis/
+marketing-performance-analytics/
 │
 ├── data/
 │   └── marketing_data.csv
